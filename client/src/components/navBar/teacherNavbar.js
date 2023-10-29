@@ -21,12 +21,6 @@ const TeacherNavbar = () => {
                 >
                   Internship Data
                 </Link>
-                <Link
-                  to="/teacher/achievements"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Achievements Data
-                </Link>
 
                 <Link
                   to="/teacher/Results"
