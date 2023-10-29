@@ -19,7 +19,7 @@ import TeacherHome from "./pages/Teacher";
 import TeacherReplace from "./pages/Teacher/Replace";
 import TeacherDelete from "./pages/Teacher/Delete";
 import TeacherUpdate from "./pages/Teacher/Update";
-import TeacherCreate from "./pages/Teacher/Create";
+import TeacherInternship from "./pages/Teacher/Internship";
 
 // import NavBar from "./components/navBar";
 import Footer from "./components/footer";
@@ -56,7 +56,7 @@ function App() {
         <Route path="/teacher/replace" element={<TeacherReplace />} />
         <Route path="/teacher/delete" element={<TeacherDelete />} />
         <Route path="/teacher/update" element={<TeacherUpdate />} />
-        <Route path="/teacher/create" element={<TeacherCreate />} />
+        <Route path="/teacher/internship" element={<TeacherInternship />} />
       </Routes>
     );
   };
