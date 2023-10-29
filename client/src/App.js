@@ -4,9 +4,9 @@ import Login from "./pages/login";
 import Register from "./pages/register";
 
 import AdminHome from "./pages/Admin";
-import AdminReplace from "./pages/Admin/Replace";
+import AdminStudentData from "./pages/Admin/studentData";
 import AdminDelete from "./pages/Admin/Delete";
-import AdminUpdate from "./pages/Admin/Update";
+import AdminTeacherData from "./pages/Admin/teacherData";
 import AdminCreate from "./pages/Admin/Create";
 
 import StudentHome from "./pages/Student";
@@ -29,9 +29,9 @@ function App() {
     return (
       <Routes>
         <Route path="/admin" element={<AdminHome />} />
-        <Route path="/admin/replace" element={<AdminReplace />} />
+        <Route path="/admin/student-data" element={<AdminStudentData />} />
         <Route path="/admin/delete" element={<AdminDelete />} />
-        <Route path="/admin/update" element={<AdminUpdate />} />
+        <Route path="/admin/Teacher-data" element={<AdminTeacherData />} />
         <Route path="/admin/create" element={<AdminCreate />} />
       </Routes>
     );
