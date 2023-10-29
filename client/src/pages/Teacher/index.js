@@ -137,6 +137,7 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import NavBar from "../../components/navBar/teacherNavbar";
 
 const TeacherHome = () => {
     const studentsData = [
@@ -161,6 +162,7 @@ const TeacherHome = () => {
 
     return (
         <div>
+            <NavBar/>
             <h1 className="text-7xl font-bold underline">Teacher Home</h1>
             <Link to="/">Home</Link>
 

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AdminNavBar from "../../components/navBar/adminNavbar";
+import Footer from "../../components/footer";
 
 const studentData = [
     { name: "John Doe", rollNo: "2021001", yearOfStudy: "3rd Year", branch: "Computer Science" },
@@ -9,6 +11,8 @@ const studentData = [
 
 const AdminStudentData = () => {
     return (
+       <div>
+         <AdminNavBar/> 
         <div className="bg-gray-100 min-h-screen p-8">
             <h1 className="text-4xl font-bold underline mb-4">Student Data</h1>
             <Link to="/" className="text-blue-600 hover:underline mb-4 block">Home</Link>
@@ -34,6 +38,8 @@ const AdminStudentData = () => {
                 </tbody>
             </table>
         </div>
+       
+       </div> 
     );
 }
 
