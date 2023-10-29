@@ -16,7 +16,7 @@ import StudentUpdate from "./pages/Student/Update";
 import StudentCreate from "./pages/Student/Create";
 
 import TeacherHome from "./pages/Teacher";
-import TeacherReplace from "./pages/Teacher/Replace";
+import TeacherResults from "./pages/Teacher/Results";
 import TeacherDelete from "./pages/Teacher/Delete";
 import TeacherUpdate from "./pages/Teacher/Update";
 import TeacherInternship from "./pages/Teacher/Internship";
@@ -53,7 +53,7 @@ function App() {
     return (
       <Routes>
         <Route path="/teacher" element={<TeacherHome />} />
-        <Route path="/teacher/replace" element={<TeacherReplace />} />
+        <Route path="/teacher/results" element={<TeacherResults />} />
         <Route path="/teacher/delete" element={<TeacherDelete />} />
         <Route path="/teacher/update" element={<TeacherUpdate />} />
         <Route path="/teacher/internship" element={<TeacherInternship />} />

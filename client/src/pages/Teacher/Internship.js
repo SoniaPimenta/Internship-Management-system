@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TeacherNavbar from "../../components/navBar/teacherNavbar";
 
 // Dummy data for student internships
 const studentInternships = [
@@ -53,11 +54,11 @@ const studentInternships = [
   },
 ];
 
-
 const TeacherInternship = () => {
   const [searchText, setSearchText] = useState("");
   const [filterCriteria, setFilterCriteria] = useState("All");
-  const [filteredInternships, setFilteredInternships] = useState(studentInternships);
+  const [filteredInternships, setFilteredInternships] =
+    useState(studentInternships);
 
   const handleSearch = (text) => {
     setSearchText(text);
@@ -80,9 +81,15 @@ const TeacherInternship = () => {
       if (criteria === "All") {
         return matchesSearchText;
       } else if (criteria === "Company") {
-        return matchesSearchText && internship.company.toLowerCase().includes(text.toLowerCase());
+        return (
+          matchesSearchText &&
+          internship.company.toLowerCase().includes(text.toLowerCase())
+        );
       } else if (criteria === "Time") {
-        return matchesSearchText && internship.time.toLowerCase().includes(text.toLowerCase());
+        return (
+          matchesSearchText &&
+          internship.time.toLowerCase().includes(text.toLowerCase())
+        );
       }
 
       return false;
@@ -93,7 +100,10 @@ const TeacherInternship = () => {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold my-4 text-center">Student Internships</h1>
+      <TeacherNavbar />
+      <h1 className="text-4xl font-bold my-4 text-center">
+        Student Internships
+      </h1>
       <div className="my-4 mx-8">
         <input
           type="text"
@@ -135,9 +145,13 @@ const TeacherInternship = () => {
         <tbody className="bg-white divide-y divide-gray-200">
           {filteredInternships.map((internship) => (
             <tr key={internship.id}>
-              <td className="px-6 py-4 whitespace-nowrap">{internship.rollNumber}</td>
+              <td className="px-6 py-4 whitespace-nowrap">
+                {internship.rollNumber}
+              </td>
               <td className="px-6 py-4 whitespace-nowrap">{internship.name}</td>
-              <td className="px-6 py-4 whitespace-nowrap">{internship.company}</td>
+              <td className="px-6 py-4 whitespace-nowrap">
+                {internship.company}
+              </td>
               <td className="px-6 py-4 whitespace-nowrap">{internship.time}</td>
             </tr>
           ))}
@@ -146,5 +160,6 @@ const TeacherInternship = () => {
     </div>
   );
 };
+
 
 export default TeacherInternship;

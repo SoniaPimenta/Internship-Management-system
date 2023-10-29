@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const TeacherNavbar = () => {
   return (
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -9,30 +9,37 @@ const NavBar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link
-                  to="/admin/student-data"
+                  to="/teacher"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Student Data
+                  Profile
                 </Link>
 
                 <Link
-                  to="/admin/teacher-data"
+                  to="/teacher/internship"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Teacher Data
+                  Internship Data
                 </Link>
                 <Link
-                  to="/admin/manage-users"
+                  to="/teacher/achievements"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Manage Users
+                  Achievements Data
+                </Link>
+
+                <Link
+                  to="/teacher/Results"
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Results Data
                 </Link>
               </div>
             </div>
           </div>
           <div>
             <Link
-              to="/admin"
+              to="/teacher"
               className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Student Management System
@@ -44,4 +51,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default TeacherNavbar;
