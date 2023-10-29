@@ -1,0 +1,92 @@
+// import React from "react";
+
+// const StudentHome = () => {
+//     return (
+//         <div>
+//             <h1 className="text-7xl font-bold underline">Student Home</h1>
+
+//         </div>
+//     )
+// }
+
+// export default StudentHome;
+
+
+
+
+//  return (
+//     <div>
+//       <h1 className="text-7xl font-bold underline">Student Home</h1>
+//       {loading ? (
+//         <p>Loading...</p>
+//       ) : (
+//         <div className="flex flex-col space-y-8">
+//           <div className="flex flex-col space-y-4">
+//             <h2 className="text-5xl font-bold">Profile</h2>
+//             <div className="flex flex-col space-y-2">
+//               <p className="font-bold">Name:</p>
+//               <p>{studentData.name}</p>
+//             </div>
+//             <div className="flex flex-col space-y-2">
+//               <p className="font-bold">Email:</p>
+//               <p>{studentData.email}</p>
+//             </div>
+//             <div className="flex flex-col space-y-2">
+//               <p className="font-bold">Contact:</p>
+//               <p>{studentData.contact}</p>
+//             </div>
+//           </div>
+//           <div className="flex flex-col space-y-4">
+//             <h2 className="text-5xl font-bold">Internships</h2>
+//             <table className="w-full border-collapse">
+//               <thead>
+//                 <tr>
+//                  <th className="border border-gray-400 px-4 py-2">Company</th>
+//                  <th className="border border-gray-400 px-4 py-2">Role</th>
+//                  <th className="border border-gray-400 px-4 py-2">Duration</th>
+//                 </tr>
+//               </thead>
+//               <tbody>
+//                 {studentData.internships.map((internship, index) => (
+//                  <tr key={index}>
+//                     <td className="border border-gray-400 px-4 py-2">{internship.company}</td>
+//                     <td className="border border-gray-400 px-4 py-2">{internship.role}</td>
+//                     <td className="border border-gray-400 px-4 py-2">{internship.duration}</td>
+//                  </tr>
+//                 ))}
+//               </tbody>
+//             </table>
+//           </div>
+//           <div className="flex flex-col space-y-4">
+//             <h2 className="text-5xl font-bold">Achievements</h2>
+//             <ul className="list-disc list-inside">
+//               {studentData.achievements.map((achievement, index) => (
+//                 <li key={index}>{achievement}</li>
+//               ))}
+//             </ul>
+//           </div>
+//           <div className="flex flex-col space-y-4">
+//             <h2 className="text-5xl font-bold">Results</h2>
+//             <table className="w-full border-collapse">
+//               <thead>
+//                 <tr>
+//                  <th className="border border-gray-400 px-4 py-2">Semester</th>
+//                  <th className="border border-gray-400 px-4 py-2">Subject</th>
+//                  <th className="border border-gray-400 px-4 py-2">Result</th>
+//                 </tr>
+//               </thead>
+//               <tbody>
+//                 {studentData.results.map((result, index) => (
+//                  <tr key={index}>
+//                     <td className="border border-gray-400 px-4 py-2">{result.semester}</td>
+//                     <td className="border border-gray-400 px-4 py-2">{result.subject}</td>
+//                     <td className="border border-gray-400 px-4 py-2">{result.result}</td>
+//                  </tr>
+//                 ))}
+//               </tbody>
+//             </table>
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//  );

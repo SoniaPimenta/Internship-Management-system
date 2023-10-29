@@ -3,12 +3,15 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 
+
 const Signup = () => {
     const [data, setData] = useState({
         firstName: "",
         lastName: "",
         email: "",
         password: "",
+        class: "", // add this
+        year: "", // add this
     });
     const [error, setError] = useState("");
     const navigate = useNavigate();
@@ -68,6 +71,24 @@ const Signup = () => {
                             className={styles.input}
                         />
                         <input
+                            type="text"
+                            placeholder="Class"
+                            name="class"
+                            onChange={handleChange}
+                            value={data.class}
+                            required
+                            className={styles.input}
+                        />
+                        <input
+                            type="text"
+                            placeholder="Year"
+                            name="year"
+                            onChange={handleChange}
+                            value={data.year}
+                            required
+                            className={styles.input}
+                        />
+                        <input
                             type="email"
                             placeholder="Email"
                             name="email"
@@ -94,6 +115,7 @@ const Signup = () => {
             </div>
         </div>
     );
+    
 };
 
 export default Signup;
