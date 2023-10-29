@@ -56,7 +56,7 @@ const StudentHome = () => {
 
 return (
     <div className="p-8 bg-blue-200">
-      <h1 className="text-4xl font-bold underline mb-4 text-red-600">Student Home</h1>
+      <h1 className="text-7xl font-bold ">Student Home</h1>
       {loading ? (
         <p>Loading...</p>
       ) : (
