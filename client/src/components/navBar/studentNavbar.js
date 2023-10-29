@@ -15,12 +15,7 @@ const StudentNavbar = () => {
                   Student Data
                 </Link>
 
-                <Link
-                  to="/admin/teacher-data"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Teacher Data
-                </Link>
+                
                 <Link
                   to="/admin/manage-users"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
