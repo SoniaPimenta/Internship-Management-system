@@ -137,7 +137,11 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import TeacherNavbar from "../../components/navBar/teacherNavbar"; 
+=======
+import NavBar from "../../components/navBar/teacherNavbar";
+>>>>>>> 4b566ed894a4998c48342f6c00966fe6ab4aa18c
 
 const TeacherHome = () => {
     const studentsData = [
@@ -162,7 +166,11 @@ const TeacherHome = () => {
 
     return (
         <div>
+<<<<<<< HEAD
             <TeacherNavbar />
+=======
+            <NavBar/>
+>>>>>>> 4b566ed894a4998c48342f6c00966fe6ab4aa18c
             <h1 className="text-7xl font-bold underline">Teacher Home</h1>
             <Link to="/">Home</Link>
 
