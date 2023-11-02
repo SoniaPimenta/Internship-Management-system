@@ -13,16 +13,18 @@ import StudentHome from "./pages/Student";
 import StudentReplace from "./pages/Student/Replace";
 import StudentDelete from "./pages/Student/Delete";
 import StudentUpdate from "./pages/Student/Update";
-import StudentCreate from "./pages/Student/Create";
+import EditProfile from "./pages/Student/Create";
 
 import TeacherHome from "./pages/Teacher";
 import TeacherResults from "./pages/Teacher/Results";
-import TeacherDelete from "./pages/Teacher/Delete";
-import TeacherUpdate from "./pages/Teacher/Update";
+import TeacherCertification from "./pages/Teacher/teacherCertification";
+import TeacherPaper from "./pages/Teacher/teacherPaper";
 import TeacherInternship from "./pages/Teacher/Internship";
+import TeacherAchievement from "./pages/Teacher/achievements";
 
 // import NavBar from "./components/navBar";
 import Footer from "./components/footer";
+
 
 function App() {
   const AdminRoutes = () => {
@@ -44,7 +46,7 @@ function App() {
         <Route path="/student/replace" element={<StudentReplace />} />
         <Route path="/student/delete" element={<StudentDelete />} />
         <Route path="/student/update" element={<StudentUpdate />} />
-        <Route path="/student/create" element={<StudentCreate />} />
+        <Route path="/student/create" element={<EditProfile />} />
       </Routes>
     );
   };
@@ -54,9 +56,10 @@ function App() {
       <Routes>
         <Route path="/teacher" element={<TeacherHome />} />
         <Route path="/teacher/results" element={<TeacherResults />} />
-        <Route path="/teacher/delete" element={<TeacherDelete />} />
-        <Route path="/teacher/update" element={<TeacherUpdate />} />
+        <Route path="/teacher/teacherCertification" element={<TeacherCertification />} />
+        <Route path="/teacher/teacherPaper" element={<TeacherPaper />} />
         <Route path="/teacher/internship" element={<TeacherInternship />} />
+        <Route path="/teacher/achievements" element={<TeacherAchievement/>} />
       </Routes>
     );
   };

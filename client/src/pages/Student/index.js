@@ -18,6 +18,11 @@ const dummyStudentData = {
     },
   ],
   achievements: ["First Place in Coding Competition", "Honor Roll Student"],
+  papersPublished: [
+    "Paper on Machine Learning in Conference XYZ",
+    "Research Paper on AI in Journal ABC",
+  ],
+  certifications: ["Certified Web Developer", "AWS Certified Cloud Practitioner"],
   results: [
     {
       semester: "Spring 2023",
@@ -100,6 +105,22 @@ const StudentHome = () => {
               <ul className="list-disc list-inside">
                 {studentData.achievements.map((achievement, index) => (
                   <li key={index}>{achievement}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white p-4 rounded shadow-lg space-y-4">
+              <h2 className="text-2xl font-bold">Papers Published</h2>
+              <ul className="list-disc list-inside">
+                {studentData.papersPublished.map((paper, index) => (
+                  <li key={index}>{paper}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white p-4 rounded shadow-lg space-y-4">
+              <h2 className="text-2xl font-bold">Certifications</h2>
+              <ul className="list-disc list-inside">
+                {studentData.certifications.map((certification, index) => (
+                  <li key={index}>{certification}</li>
                 ))}
               </ul>
             </div>

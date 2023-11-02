@@ -28,6 +28,27 @@ const TeacherNavbar = () => {
                 >
                   Results Data
                 </Link>
+
+                <Link
+                  to="/teacher/teacherCertification"
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Certifications
+                </Link>
+
+                <Link
+                  to="/teacher/teacherPaper"
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Paper Publications  
+                </Link>
+
+                <Link
+                  to="/teacher/achievements"
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Achievements  
+                </Link>
               </div>
             </div>
           </div>

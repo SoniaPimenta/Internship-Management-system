@@ -17,10 +17,10 @@ const StudentNavbar = () => {
 
                 
                 <Link
-                  to="/admin/manage-users"
+                  to="/student/Create"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Manage Users
+                  Edit Profile
                 </Link>
               </div>
             </div>
