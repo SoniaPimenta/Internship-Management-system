@@ -79,6 +79,7 @@ const cert_default=
   const pub_default=
   [{
     name:"",
+    pubname:"",
     paperLink:"",
     rollNumber:"",
     }]
@@ -239,7 +240,7 @@ console.log(CertData);
               <ul className="list-disc list-inside">
               {PubData.map((item) => (
           <li key={item.id}>
-            Name: {item.name}, Paper Link: {item.paperLink}
+            Name: {item.pubname}, Paper Link: {item.paperLink}
           </li>
         ))}
               </ul>

@@ -41,7 +41,7 @@ else if(p===3){
 
 }
 else if(p===4){
-  fieldNames = ["name", "rollNumber", "publicationLink"];
+  fieldNames = ["name","pubname", "rollNumber", "publicationLink"];
   call+="publication";
 
 }

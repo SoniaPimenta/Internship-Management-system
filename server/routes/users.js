@@ -144,6 +144,7 @@ const internshipSchema = new mongoose.Schema({
 	  const publicationSchema = new mongoose.Schema({
 		id: { type: String, required: true },		
 		name: { type: String, required: true },
+		pubname: { type: String, required: true },
 		rollNumber: { type: Number, required: true },
 		paperLink: [{ type: String }],
 	  });
